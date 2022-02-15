@@ -1,0 +1,61 @@
+# topo-6-node.txt
+
+#   /------\	                                                /------\
+#   | Src1 |<--+                                            +-->| Dst1 |
+#   \------/    \                                          /    \------/
+#            	 \                                        /     
+#                 +-->/------\   "bottleneck"  /------\<-+      
+#                     | Rtr1 |<===============>| Rtr2 |         
+#                 +-->\------/                 \------/<-+      
+#                /                                        \
+#   /------\    /                                          \    /------\
+#   | Src2 |<--+                                            +-->| Dst2 |
+#   \------/                                                    \------/
+
+router
+
+# node  comment     yPos    xPos
+Src1   NA        1       3
+Src2   NA	 3       3
+Rtr1   NA	 1	 5
+Rtr2   NA	 3	 5
+Rtr3   NA        1       7
+Rtr4   NA        3       7
+Rtr5   NA        1       9
+Rtr6   NA        3       9
+Rtr7   NA        1       11
+Rtr8   NA        3       11
+Rtr9   NA        1       13
+Rtr10  NA        3       13
+Rtr11  NA        1       15
+Rtr12  NA        3       15
+Rtr13  NA        1       17
+Rtr14  NA        3       17
+RtrA   NA	 2	 19	
+RtrB   NA        2	 21
+Dst1   NA        1       23
+Dst2   NA        3       23
+
+link
+
+# srcNode   dstNode     bandwidth   metric  delay   queue
+Src1        Rtr1        10Mbps      1        1ms    20
+Src2        Rtr2        10Mbps      1        1ms    20
+Rtr1        Rtr3        10Mbps      1        1ms    20
+Rtr2        Rtr4        10Mbps      1        1ms    20
+Rtr3        Rtr5        10Mbps      1        1ms    20
+Rtr4        Rtr6        10Mbps      1        1ms    20
+Rtr5        Rtr7        10Mbps      1        1ms    20
+Rtr6        Rtr8        10Mbps      1        1ms    20
+Rtr7        Rtr9        10Mbps      1        1ms    20
+Rtr8        Rtr10       10Mbps      1        1ms    20
+Rtr9        Rtr11       10Mbps      1        1ms    20
+Rtr10       Rtr12       10Mbps      1        1ms    20
+Rtr11       Rtr13       10Mbps      1        1ms    20
+Rtr12       Rtr14       10Mbps      1        1ms    20
+Rtr13       RtrA        10Mbps      1        1ms    20
+Rtr14       RtrA        10Mbps      1        1ms    20
+RtrA        RtrB        1Mbps       1        1ms    20
+Dst1        RtrB        10Mbps      1        1ms    20
+Dst2        RtrB        10Mbps      1        1ms    20
+

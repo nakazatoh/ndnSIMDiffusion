@@ -1,0 +1,11 @@
+Time	Node	Interface	Type	Packets	Kilobytes	PacketsRaw	KilobytesRaw
+0.1	Src1	combined	Drop	0	0	0	0
+0.1	Src2	combined	Drop	0	0	0	0
+0.1	Rtr1	combined	Drop	0	0	0	0
+0.1	Dst1	combined	Drop	0	0	0	0
+0.1	Dst2	combined	Drop	0	0	0	0
+0.2	Src1	combined	Drop	0	0	0	0
+0.2	Src2	combined	Drop	0	0	0	0
+0.2	Rtr1	combined	Drop	0	0	0	0
+0.2	Dst1	combined	Drop	0	0	0	0
+0.2	Dst2	combined	Drop	0	0	0	0

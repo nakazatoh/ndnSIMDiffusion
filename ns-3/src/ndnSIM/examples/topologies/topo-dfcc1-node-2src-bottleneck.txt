@@ -1,0 +1,61 @@
+# topo-dfcc1-node-2src-bottleneck.txt
+
+#   /------\	                                                /------\
+#   | Src2 |<-----------------------+                       +-->| Dst1 |
+#   \------/                        |                      /    \------/
+#            	                    |                     /     
+#                     /------\   /-------\   /-------\<-+    
+#                     | Rtr1 |---| Rtr10 |---| Rtr16 |         
+#                 +-->\------/   \-------/   \-------/      
+#                /                                       
+#   /------\    /                                              
+#   | Src1 |<--+                                            
+#   \------/                                                   
+
+router
+
+# node  comment     yPos    xPos
+Src1   NA        1       3
+Src2   NA        3       3
+Rtr1   NA        2       5
+Rtr2   NA        2       6
+Rtr3   NA        2	     7
+Rtr4   NA        2       8
+Rtr5   NA        2       9
+Rtr6   NA        2       10
+Rtr7   NA        2       11
+Rtr8   NA        2       12
+Rtr9   NA        2       13
+Rtr10  NA        2       14
+Rtr11  NA        2       15
+Rtr12  NA        2       16
+Rtr13  NA        2       17
+Rtr14  NA        2       18
+Rtr15  NA        2       19
+Rtr16  NA        2       20
+Dst1   NA        1       22
+
+link
+
+# srcNode   dstNode     bandwidth   metric  delay   queue
+Src1        Rtr1        10Mbps       1        5ms    20
+Src2        Rtr10       10Mbps       1        5ms    20
+Rtr1        Rtr2        10Mbps       1        5ms    20
+Rtr2        Rtr3        10Mbps       1        5ms    20
+Rtr3        Rtr4        10Mbps       1        5ms    20
+Rtr4        Rtr5        10Mbps       1        5ms    20
+Rtr5        Rtr6        10Mbps       1        5ms    20
+Rtr6        Rtr7        10Mbps       1        5ms    20
+Rtr7        Rtr8        10Mbps       1        5ms    20
+Rtr8        Rtr9        10Mbps       1        5ms    20
+Rtr9        Rtr10       10Mbps       1        5ms    20
+Rtr10       Rtr11       10Mbps       1        5ms    20
+Rtr11       Rtr12       10Mbps       1        5ms    20
+Rtr12       Rtr13       10Mbps       1        5ms    20
+Rtr13       Rtr14       1Mbps        1        5ms    20
+Rtr14       Rtr15       10Mbps       1        5ms    20
+Rtr15       Rtr16       10Mbps       1        5ms    20
+Dst1        Rtr16       10Mbps       1        5ms    20
+
+
+

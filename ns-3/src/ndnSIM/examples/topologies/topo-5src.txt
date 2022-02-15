@@ -1,0 +1,56 @@
+#topo-5src.txt
+
+router
+
+# node  comment     yPos    xPos
+Src1   NA        8       1
+Src2   NA        6       1
+Src3   NA        4       1
+Src4   NA        2       1
+Src5   NA        9       3
+Rtr1   NA        9       2
+Rtr2   NA        7       2
+Rtr3   NA        5       2
+Rtr4   NA        3       2
+Rtr5   NA        1       2
+Rtr6   NA        5       3
+Rtr7   NA        7       4
+Rtr8   NA        8       5
+Rtr9   NA        6       5
+Rtr10  NA        3       4
+Rtr11  NA        3       5
+Dst1   NA        7       6
+Dst2   NA        5       4
+Dst3   NA        3       6
+Dst4   NA        1       4
+Dst5   NA        1       3
+
+link
+
+# srcNode   dstNode     bandwidth   metric  delay   queue
+Src1        Rtr1        10Mbps      1        1ms    10
+Src1        Rtr2        10Mbps      1        1ms    10
+Src2        Rtr2        10Mbps      1        1ms    10
+Src2        Rtr3        10Mbps      1        1ms    10
+Src3        Rtr3        10Mbps      1        1ms    10
+Src3        Rtr4        10Mbps      1        1ms    10
+Src4        Rtr4        10Mbps      1        1ms    10
+Src4        Rtr5        10Mbps      1        1ms    10
+Src5        Rtr6        10Mbps      1        1ms    10
+Rtr1        Rtr6        10Mbps      1        1ms    10
+Rtr2        Rtr6        10Mbps      1        1ms    10
+Rtr3        Rtr6        10Mbps      1        1ms    10
+Rtr4        Rtr6        10Mbps      1        1ms    10
+Rtr5        Rtr6        10Mbps      1        1ms    10
+Rtr6        Rtr7        10Mbps      1        1ms    10
+Rtr6        Rtr10       1Mbps       1        1ms    10
+Rtr7        Rtr8        1Mbps       1        1ms    10
+Rtr7        Rtr9        10Mbps      1        1ms    10
+Rtr10       Rtr11       0.1Mbps     1        1ms    10
+Dst1        Rtr8        10Mbps      1        1ms    10
+Dst1        Rtr9        10Mbps      1        1ms    10
+Dst2        Rtr6        10Mbps      1        1ms    10
+Dst3        Rtr11       10Mbps      1        1ms    10
+Dst4        Rtr10       10Mbps      1        1ms    10
+Dst5        Rtr6        10Mbps      1        1ms    10
+
